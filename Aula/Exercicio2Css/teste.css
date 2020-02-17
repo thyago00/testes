@@ -1,0 +1,32 @@
+#tudo {
+    width: 600px;
+    height: 600px;
+    ;
+}
+
+#esquerda,
+#direita,
+#baixoesq,
+#baixodir {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+#esquerda {
+    background-color: blue;
+}
+
+#direita {
+    background-color: yellow;
+}
+
+#baixoesq {
+    background-color: green;
+    margin-top: 200px;
+}
+
+#baixodir {
+    background-color: red;
+    margin-top: 200px;
+}

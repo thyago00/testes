@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tela login</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+
+<body>
+    <div id='site'>
+        <div id='header'>
+            <b id='titulo'>Quero me cadastrar</b> &emsp; <u>Saiba mais | Ajuda | Politica de privacidade</u> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Já está cadastrado?<u>login</u>
+        </div>
+        <div id='conteudo'>
+            <div id='conteudoesquerda'>
+                <h2>MINHA CONTA</h2>
+                <blockquote>
+                    Email
+                    <br><input type="email" class="esqcampo1">
+                    <br><br> Senha: (de 8 a 24 digitos)
+                    <label class="senha"></label><input type="password" class="esqcampo2">
+                    <br><br><input type="checkbox" class="botao">Quero ter acesso automático ao site nas
+                    <br>próximas visitas
+                </blockquote>
+            </div>
+
+            <div id='conteudodireita'>
+                <blockquote>
+                    <p id='textodir'></p>
+                    Confirme seu email
+                    <input type="text" class="campo3">
+
+                    <br><br> Confirme sua senha
+                    <label class="conSenha"></label><input type="text" class="campo4">
+
+                    <p id='msg'>A senha deve atender os critérios abaixo: <br>&emsp;I. no mínimo, 8 caracteres; <br>&emsp;II. apenas letras e números;
+                        <br>&emsp;III. nenhuma repetição, em sequência, de letra &emsp;ou número; <br>&emsp;IV. não pode conter o e-mail.
+                    </p>
+                </blockquote>
+            </div>
+
+            <div id='esqbaixo'>
+                <h2>DADOS BÁSICOS</h2>
+                <blockquote>
+                    Nome Completo
+                    <input type="text" id="esqcampo3">
+
+                    <br><br> Data de Nascimento
+                    <input type="date" id="esqcampo4">
+
+                    <br><br> De onde acessa?
+                    <input type="text" placeholder="Brasil">
+
+                    <br><br> CEP
+                    <br><input name="CEP" id="CEP" required pattern="\d{5}-\d{3}" />
+                    <u>(Consulta)</u>
+
+                    <br><br> Qual seu grau de instrução?
+                    <input type="text" placeholder="Selecione">
+
+                    <br><br><input type="checkbox"> Quero ser informado sobre promoções e ofertas do Globo
+                    <br><input type="checkbox"> Quero ser informado sobre promoções e ofertadas de parceiros do Globo
+                </blockquote>
+
+
+
+            </div>
+            <div id='dirbaixo'>
+                <blockquote>
+                    <p id='textodirbaixo'></p>
+                    Apelido: (opcional)
+                    <input type="text" size="15"> <u>(porque o apelido?)</u>
+
+                    <br><br> Sexo:
+                    <br> <input type="radio" name="masc" id="">
+                    <label for="masc">masculino</label>
+                    <input type="radio" name="fem">
+                    <label for="fem">feminino</label>
+
+                    <br><br><br><br> Estado
+                    <br><input type="text" placeholder="Selecione">
+
+                    <br><br> Você é o leitor do O Globo impresso?
+                    <input type="text" placeholder="Selecione">
+                </blockquote>
+            </div>
+        </div>
+        <div id='footer'></div>
+    </div>
+
+    <script src="teste.js"></script>
+</body>
+
+</html>

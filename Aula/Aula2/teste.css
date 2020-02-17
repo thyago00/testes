@@ -1,0 +1,59 @@
+#site {
+    height: 1000px;
+    width: 600px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-right: auto;
+}
+
+#conteudo {
+    width: 800px;
+    height: 800px;
+}
+
+#conteudoesquerda,
+#esqbaixo,
+#conteudodireita,
+#dirbaixo {
+    width: 320px;
+    height: 300px;
+    float: left;
+}
+
+#conteudo {
+    color: rgb(23, 99, 161);
+    font-size: 13px;
+    font-style: Impact, fantasy;
+}
+
+#header {
+    color: rgb(51, 97, 134);
+    font-size: 11px;
+}
+
+#msg {
+    color: rgba(165, 37, 37, 0.815);
+    font-size: 12px;
+}
+
+#titulo {
+    font-size: 18px;
+}
+
+input {
+    height: 12px;
+    size: 25px
+}
+
+h2 {
+    color: rgb(39, 163, 194)
+}
+
+#textodir {
+    margin-top: 56px
+}
+
+#textodirbaixo {
+    margin-top: 55px
+}
