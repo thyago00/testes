@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aulaDom</title>
+    <style>
+        body {
+            background: rgb(153, 150, 150);
+            color: black;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>estudos com dom</h1>
+    <p> Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id='teste'>Clique em mim</div>
+    <script>
+        var teste = window.document.querySelector('div#teste')
+        teste.style.color = 'blue'
+
+
+        var msg = window.document.getElementById('teste')
+            //msg.style.background = pink
+            //msg.innerText = 'ganso melhor que neymar'
+
+        msg = window.document.getElementsByName('teste')[0]
+        msg.innerText = 'ola'
+
+
+        var corpo = window.document.body
+        corpo.style.background = 'brown'
+        var p1 = document.getElementsByTagName('p')[1]
+        p1.style.color = 'white'
+        document.writeln(p1.innerHTML)
+        window.alert(p1.innerHTML)
+        window.document.writeln('está escrito assim o 1 ' + p1.innerText)
+    </script>
+</body>
+
+</html>

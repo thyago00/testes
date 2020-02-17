@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsFora</title>
+
+</head>
+
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="vel"> km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <h1>Verifica país</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar país" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            var v = document.getElementById('vel')
+            var vel = Number(v.value)
+            var res = document.getElementById('res')
+            res.innerHTML = 'sua velocidade atual é de ' + vel + ' km/h'
+            if (vel > 60) {
+                res.innerHTML += ('<p> você foi multado </p>')
+            } else
+                res.innerHTML == '<p> Dirija sempre com cinto de segurança </p>'
+        }
+
+        function verificar() {
+            var p = document.getElementById('pais')
+            var pais = String(p.value)
+            var resultado = document.getElementById('resultado')
+            resultado.innerHTML = 'seu país é ' + pais
+            if (pais == 'brasil') {
+                resultado.innerHTML += '<p>você é brasileiro</p>'
+            } else
+                resultado.innerHTML += '<p>você é estrangeiro</p>'
+        }
+    </script>
+</body>
+
+</html>
