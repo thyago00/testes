@@ -13,14 +13,22 @@
 }
 
 #conteudoesquerda,
-#esqbaixo,
-#conteudodireita,
-#dirbaixo {
-    width: 320px;
+#conteudodireita
+ {
+    width: 300px;
     height: 300px;
     float: left;
+    background: rgb(168, 226, 226)
 }
+#esqbaixo,
+#dirbaixo{
+    width: 300px;
+    height: 500px;
+    float: left;
+    margin-top: 10px;
+    background: rgb(168, 226, 226);
 
+}
 #conteudo {
     color: rgb(23, 99, 161);
     font-size: 13px;
